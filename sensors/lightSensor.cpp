@@ -12,3 +12,20 @@ LightSensor::LightSensor(float lightLevelMin, float lightLevelMax) : Sensor(0.0f
 LightSensor::~LightSensor() {
   std::cout << "Inside the LightSensor destructor\n";
 }
+
+
+void LightSensor::setLightLevelMin(float lightLevelMin) {
+  this->lightLevelMin = lightLevelMin;
+}
+
+float LightSensor::getLightLevelMin() {
+  return lightLevelMin;
+}
+
+void LightSensor::setLightLevelMax(float lightLevelMax) {
+  this->lightLevelMax = lightLevelMax;
+}
+
+float LightSensor::getLightLevelMax() {
+  return lightLevelMax;
+}

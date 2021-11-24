@@ -11,8 +11,8 @@ public:
   float getVoltageInputMax();
 
 protected:
-  float voltageInputMin;
-  float voltageInputMax;
+  float voltInputMin;
+  float voltInputMax;
 
 private:
   // private sensor to prevent usage of the default constructor,
